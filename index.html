@@ -1083,6 +1083,7 @@ source install/setup.bash</code><button class="copy-btn">Copy</button></pre>
   <li>Use the provided code template to program your robot to execute the move-and-capture operation.</li>
   <li>Create a Python file in the following directory:
     <pre style="background:#161b22; padding:1em; border-radius:10px; color:#fff;"><code>sudo apt install ros-humble-cv-bridge python3-opencv
+pip install "numpy<2" --force-reinstall
 cd ~/simulation_ws/src/scripts
 touch move_and_capture.py</code><button class="copy-btn">Copy</button></pre>
   </li>
@@ -1287,6 +1288,11 @@ if __name__ == '__main__':
     main()
  </code><button class="copy-btn">Copy</button></pre>
 
+
+  <li>Run the above python file in the terminal:
+    <pre style="background:#161b22; padding:1em; border-radius:10px; color:#fff;"><code>
+python3 move_and_capture.py</code><button class="copy-btn">Copy</button></pre>
+  </li>
 <hr style="border:none; border-top:1px solid #30363d; margin:1.5em 0;" />
 
 <h2 id="final-thoughts" style="color:#79c0ff;">Final Thoughts</h2>
