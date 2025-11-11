@@ -601,6 +601,46 @@ After successfully launching the teleoperation node, use the keys below to navig
   <p>This will safely reset the simulation and prepare the robot for another teleoperation attempt.</p>
 </div>
 
+<!-- ========================= -->
+<!-- 🎥 Embedded .webm Video Block -->
+<!-- ========================= -->
+<div style="
+  max-width:850px;
+  margin:2em auto;
+  background:linear-gradient(145deg,#0f141a 0%,#171c23 100%);
+  padding:25px;
+  border-radius:14px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.25);
+  text-align:center;
+  font-family:'Segoe UI',sans-serif;
+">
+
+  <h2 style="color:#4dd0e1; font-size:24px; font-weight:800; margin-bottom:15px;">
+    🎥 Demonstration: Robot Movement Simulation
+  </h2>
+
+  <video controls
+         autoplay
+         muted
+         loop
+         style="
+           width:85%;
+           max-width:750px;
+           border-radius:12px;
+           box-shadow:0 4px 14px rgba(0,0,0,0.4);
+           margin-top:10px;
+         ">
+    <source src="teleop.webm" type="video/webm">
+    <source src="robot_motion.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <p style="font-size:15px; color:#b0bec5; margin-top:12px;">
+    <em>▲ Watch the robot execute linear and angular velocity commands in the simulation environment.</em>
+  </p>
+</div>
+
+
 <!-- ===================== CHUNK 4 (Enhanced Dark Visuals) ===================== -->
 
 <center>
@@ -773,6 +813,44 @@ ros2 run turtlebot3_teleop teleop_keyboard</code><button class="copy-btn">Copy</
 <hr style="border:none; border-top:1px solid #30363d; margin:2em 0;" />
 
 
+<!-- ========================= -->
+<!-- 🎥 Embedded .webm Video Block -->
+<!-- ========================= -->
+<div style="
+  max-width:850px;
+  margin:2em auto;
+  background:linear-gradient(145deg,#0f141a 0%,#171c23 100%);
+  padding:25px;
+  border-radius:14px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.25);
+  text-align:center;
+  font-family:'Segoe UI',sans-serif;
+">
+
+  <h2 style="color:#4dd0e1; font-size:24px; font-weight:800; margin-bottom:15px;">
+    🎥 Demonstration: Visualizing in RViz2
+  </h2>
+
+  <video controls
+         autoplay
+         muted
+         loop
+         style="
+           width:85%;
+           max-width:750px;
+           border-radius:12px;
+           box-shadow:0 4px 14px rgba(0,0,0,0.4);
+           margin-top:10px;
+         ">
+    <source src="rviz_teleop.webm" type="video/webm">
+    <source src="robot_motion.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <p style="font-size:15px; color:#b0bec5; margin-top:12px;">
+    <em>▲ Watch the robot executing teleoperation in the simulation environment and visualize RViz2 through the Camera feed and Laser scan topics.</em>
+  </p>
+</div>
 
 
 
@@ -1049,6 +1127,46 @@ source install/setup.bash</code><button class="copy-btn">Copy</button></pre>
   <li>Changing the <strong>twist.linear.x</strong> and <strong>twist.angular.z</strong> values to modify the robot’s speed and turning rate.</li>
 </ul>
 
+<!-- ========================= -->
+<!-- 🎥 Embedded .webm Video Block -->
+<!-- ========================= -->
+<div style="
+  max-width:850px;
+  margin:2em auto;
+  background:linear-gradient(145deg,#0f141a 0%,#171c23 100%);
+  padding:25px;
+  border-radius:14px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.25);
+  text-align:center;
+  font-family:'Segoe UI',sans-serif;
+">
+
+  <h2 style="color:#4dd0e1; font-size:24px; font-weight:800; margin-bottom:15px;">
+    🎥 Demonstration: Obstacle Avoidance 
+  </h2>
+
+  <video controls
+         autoplay
+         muted
+         loop
+         style="
+           width:85%;
+           max-width:750px;
+           border-radius:12px;
+           box-shadow:0 4px 14px rgba(0,0,0,0.4);
+           margin-top:10px;
+         ">
+    <source src="" type="video/webm">
+    <source src="obstacle.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <p style="font-size:15px; color:#b0bec5; margin-top:12px;">
+    <em>▲ Watch the robot execute obstacle avoidance in the simulation environment.</em>
+  </p>
+</div>
+
+
 <hr style="border:none; border-top:1px solid #30363d; margin:1.5em 0;" />
 <!-- ===================== CHUNK 5 (Enhanced Dark Visuals) ===================== -->
 
@@ -1287,7 +1405,6 @@ def main(args=None):
 if __name__ == '__main__':
     main()
  </code><button class="copy-btn">Copy</button></pre>
-
 
   <li>Run the above python file in the terminal:
     <pre style="background:#161b22; padding:1em; border-radius:10px; color:#fff;"><code>
