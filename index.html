@@ -502,29 +502,31 @@ Before diving into automation and sensor-based navigation, it’s essential to f
 ">
   <h1 style="text-align:center; font-size:32px; font-weight:800; color:#4dd0e1; margin-bottom:15px;">
     Understanding <code>/cmd_vel</code> — Linear & Angular Velocities
-  </h1>
+</h1>
 
-  <p style="font-size:17px; line-height:1.8; color:#e0f2f1;">
+<p style="font-size:17px; line-height:1.8; color:#e0f2f1;">
     In ROS 2, the topic <strong><code>/cmd_vel</code></strong> (short for <em>command velocity</em>)
     is the standard channel used to control a robot’s movement. It carries messages of type
     <strong><code>geometry_msgs/Twist</code></strong>.
-  </p>
+</p>
 
-  <p style="font-size:17px; line-height:1.8; color:#b2ebf2;">
+<p style="font-size:17px; line-height:1.8; color:#b2ebf2;">
     This message defines how fast the robot moves forward/backward and how quickly it turns.
-  </p>
+</p>
 
-  <h2 style="color:#80deea; font-weight:700; margin-top:20px;">🧭 The <code>Twist</code> Message Structure</h2>
-  <pre style="
-      background:#0b0f14; 
-      color:#cfd8dc; 
-      padding:14px; 
-      border-radius:10px; 
-      font-size:15px; 
-      border:1px solid #263238;
-      overflow:auto;
-    ">
-<code>geometry_msgs/msg/Twist:
+<h2 style="font-weight:700; margin-top:20px;">🧭 The <code>Twist</code> Message Structure</h2>
+
+<div style="
+  background:#161b22; 
+  padding:1em; 
+  border-radius:10px; 
+  color:#fff; 
+  font-size:15px; 
+  white-space:pre; 
+  box-shadow:0 0 12px rgba(0,0,0,0.35);
+  font-family:'Consolas','Courier New',monospace;
+">
+geometry_msgs/msg/Twist:
   linear:
     x: 0.0   # forward/backward
     y: 0.0   # (used for strafing — mostly for drones or holonomic bots)
@@ -533,7 +535,8 @@ Before diving into automation and sensor-based navigation, it’s essential to f
     x: 0.0
     y: 0.0
     z: 0.0   # rotation about the vertical axis (yaw)
-</code></pre>
+</div>
+
 
   <h2 style="color:#80deea; font-weight:700;">⚙️ How It Works</h2>
   <ul style="line-height:1.8; font-size:16px; color:#e0f7fa;">
@@ -567,19 +570,34 @@ ros2 run turtlebot3_teleop teleop_keyboard</code><button class="copy-btn">Copy</
 <p>
 After successfully launching the teleoperation node, use the keys below to navigate the robot inside the warehouse simulation environment:
 </p>
-
-<div style="background:linear-gradient(135deg,#1e3a8a,#1d4ed8); border-radius:12px; padding:20px; text-align:center; color:#dbeafe; box-shadow:0 3px 14px rgba(0,0,0,0.35); width:70%; margin:auto;">
+<div style="background:linear-gradient(135deg,#1e3a8a,#1d4ed8); 
+            border-radius:12px; 
+            padding:20px; 
+            text-align:center; 
+            color:#dbeafe; 
+            box-shadow:0 3px 14px rgba(0,0,0,0.35); 
+            width:70%; 
+            margin:auto;">
   <p style="font-size:17px; margin:0; line-height:1.6;">
     <span style="display:block; font-weight:700;">Moving Around:</span>
   </p>
-  <pre style="font-family:'Consolas','Courier New',monospace; font-size:17px; color:#fff; margin:10px 0;">        W → Move Forward
+
+  <div style="font-family:'Consolas','Courier New',monospace; 
+              font-size:17px; 
+              color:#fff; 
+              margin:10px 0; 
+              white-space:pre;">
+        W → Move Forward
    A → Turn Left     D → Turn Right
-        X → Move Backward</pre>
+        X → Move Backward
+  </div>
+
   <p style="font-size:16px;">
     <code>Space</code> or <code>S</code> → Force Stop<br>
     <code>Ctrl + C</code> → Quit Teleoperation
   </p>
 </div>
+
 
 <!-- Pro Tip -->
 <div style="background:linear-gradient(135deg,#1e3a8a,#1d4ed8); border-left:8px solid #58a6ff; padding:18px 24px; border-radius:12px; margin:1.5em 0; color:#dbeafe; box-shadow:0 4px 16px rgba(0,0,0,0.35);">
