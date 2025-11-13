@@ -1024,10 +1024,10 @@ class ObstacleAvoidance(Node):
       
         if front_distance < threshold_distance:
             # Obstacle detected in front, turn
-            twist.angular.z = 0.5  # Turn rate
+            twist.angular.z = 0.10  # Turn rate
         else:
             # No obstacle, move forward
-            twist.linear.x = 0.2  # Forward speed
+            twist.linear.x = 0.25  # Forward speed
       
         self.publisher.publish(twist)
 
